@@ -31,6 +31,9 @@ function colorEnable(m) {
         // seat count  
         seatCount = seatCount - 1;
         seatCount1('seat-count')
+
+        // price add writing
+        ticketName("price-div",m)
     }
     else {
         disabledElementById(m)
@@ -39,6 +42,16 @@ function colorEnable(m) {
 
     // removeBackgroundColorById(id)
 
+}
+
+function ticketName(n,m){
+    const sectionDress = document.createElement("div");
+    sectionDress.innerHTML = 
+    // `<p> ${m}        Economy       550</p>`
+    `<p> ${m}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 550</p>`;
+
+    
+    document.getElementById(n).appendChild(sectionDress);
 }
 
 function seatCount1(m){
