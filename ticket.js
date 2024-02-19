@@ -4,20 +4,6 @@ document.getElementById('first-click').addEventListener('click', function () {
 });
 
 
-
-// document.getElementById("A1").addEventListener("click", function(event){
-//     console.log("click");
-//     console.log(event)
-// });
-
-// document.addEventListener('click', handleClickEvent)
-
-// function handleClickEvent(event) {
-//     // console.log(event)
-//     console.log(event.target.id)
-//     const id1 = event.target.id
-//     colorEnable(id1)
-// }
 document.addEventListener('click', handleClickEvent)
 
 function handleClickEvent(event) {
@@ -89,11 +75,7 @@ function colorEnable(m) {
                 // couponVal.appendChild(p);
             }
 
-
-
-
         }
-
 
         phoneNumberInput.addEventListener('input', function () {
             if (count > 0 && containsNumbers(this.value)) {
@@ -107,7 +89,6 @@ function colorEnable(m) {
         disabledElementById(m)
 
     }
-
 
 }
 
