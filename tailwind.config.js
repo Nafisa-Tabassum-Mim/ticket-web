@@ -3,7 +3,7 @@ module.exports = {
     theme: {
       colors: {
    
-        'green': '#1D1DD1',
+        'green': '#1DD100',
 
       },
     },
